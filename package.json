@@ -1,0 +1,27 @@
+{
+  "name": "react-redux-kit",
+  "version": "0.0.2",
+  "description": "react-redux-kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zale",
+  "license": "MIT",
+  "bin": {
+    "rrk": "index.js"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "inquirer": "^6.2.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaleGZL/react-redux-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zaleGZL/react-redux-kit/issues"
+  },
+  "homepage": "https://github.com/zaleGZL/react-redux-kit#readme"
+}

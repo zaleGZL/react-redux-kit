@@ -1,0 +1,46 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+// import classnames from 'classnames';
+
+import { dispatchChanges, dispatchAsyncChanges } from './actions';
+// import { getErrorMessage } from '../../../utils';
+
+import './style.scss';
+
+class {%ComponentNameWithCamelCase%} extends React.PureComponent {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+
+    this.actions = bindActionCreators(
+      {
+        dispatchChanges,
+        dispatchAsyncChanges,
+      },
+      props.dispatch
+    );
+  }
+
+  render() {
+    return (
+      <div className="{%ComponentNameWithDash%}">{%ComponentNameWithDash%}</div>
+    );
+  }
+}
+
+{%ComponentNameWithCamelCase%}.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+};
+
+{%ComponentNameWithCamelCase%}.defaultProps = {};
+
+const mapStateToProps = state => {
+  return {
+    {%ComponentName%}: state.{%ComponentName%},
+  };
+};
+
+export default connect(mapStateToProps)({%ComponentNameWithCamelCase%});
